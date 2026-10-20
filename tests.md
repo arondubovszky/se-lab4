@@ -1,0 +1,5 @@
+| Tesztelt követelmény | A GT4500 nem tud lőni ha nincs több torpedója | Mi történik, ha csak az egyik Torpedo Store üres és SINGLE firing mode-ot használunk? | Mindent kilövünk ALL firing mode esetén?
+| -------------------- | --------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
+| Előfeltételek        | Minden Torpedo Store üres az adott hajón      | Egy üres és egy nem üres Torpedo Store ugyanazon a hajón | két egy elemű Topredo Store |
+| A teszt lépései      | Megnézzük, hogy tudunk-e lőni                 | folyamatosan lövünk torpedókat ameddig a nem üres T.S kiürül, ellenőrizzük hogy minden alkalommal sikerült-e | Használjuk az ALL mode-ot, majd megnézzük hogy failure-t kapunk-e |
+| Elvárt kimenet       | A TORPEDO parancs eredménye failure           | mindig tudtunk lőni | első utasításra SUCCESS, másodikra FAIL
